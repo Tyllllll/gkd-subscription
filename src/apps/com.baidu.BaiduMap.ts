@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-地图上方横幅',
-      quickFind: true,
       rules: [
         {
           activityIds: 'com.baidu.baidumaps.MapsActivity',
