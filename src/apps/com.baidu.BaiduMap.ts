@@ -12,7 +12,7 @@ export default defineGkdApp({
         {
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           matches: 'ImageView[id="com.baidu.BaiduMap:id/yellow_banner_close"]',
-          snapshotUrls: 'https://i.gkd.li/snapshot/1718897671807',
+          snapshotUrls: 'https://i.gkd.li/i/15916609',
         },
       ],
     },
