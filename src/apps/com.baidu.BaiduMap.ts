@@ -7,10 +7,12 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-地图上方横幅',
+      quickFind: true,
       rules: [
         {
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           matches: 'ImageView[id="com.baidu.BaiduMap:id/yellow_banner_close"]',
+          snapshotUrls: 'https://i.gkd.li/snapshot/1718897671807',
         },
       ],
     },
