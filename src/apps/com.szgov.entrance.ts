@@ -7,9 +7,11 @@ export default defineGkdApp({
     {
       key: 1,
       name: '首页弹窗',
+      quickFind: true,
+      actionMaximum: 2,
+      matchTime: 10000,
       rules: [
         {
-          quickFind: true,
           activityIds: 'com.csztv.starfleet.MainActivity',
           matches: 'ImageView[id="com.szgov.entrance:id/close"]',
           snapshotUrls: 'https://i.gkd.li/i/15923389',
