@@ -4,7 +4,7 @@ const appList = [
   { id: 'com.baidu.BaiduMap', name: '百度地图' },
   { id: 'com.dragon.read', name: '番茄免费小说' },
   { id: 'com.sina.weibo', name: '微博' },
-  { id: 'com.szgov.entrance', name: '苏周到' },
+  // { id: 'com.szgov.entrance', name: '苏周到' },
 ];
 
 export default defineGkdGlobalGroups([

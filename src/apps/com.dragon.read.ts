@@ -22,20 +22,5 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 2,
-      name: '开屏广告',
-      quickFind: true,
-      actionMaximum: 2,
-      matchTime: 5000,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-          matches: 'TextView[text="跳过广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/15922984',
-        },
-      ],
-    },
   ],
 });
