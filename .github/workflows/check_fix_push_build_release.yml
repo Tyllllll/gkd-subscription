@@ -1,4 +1,4 @@
-name: check_fix_push
+name: check_fix_push_build_release
 
 on:
   push:
