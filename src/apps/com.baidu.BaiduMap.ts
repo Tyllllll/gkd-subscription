@@ -16,5 +16,15 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      quickFind: true,
+      matchTime: 5000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
+      snapshotUrls: 'https://i.gkd.li/i/12909385',
+    },
   ],
 });

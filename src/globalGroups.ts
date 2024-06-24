@@ -52,7 +52,7 @@ export default defineGkdGlobalGroups([
     key: 1,
     name: '更新提示',
     order: -9,
-    matchTime: 8000,
+    matchTime: 5000,
     actionMaximum: 1,
     resetMatch: 'app',
     rules: [
@@ -74,7 +74,7 @@ export default defineGkdGlobalGroups([
     key: 2,
     name: '青少年模式',
     order: -8,
-    matchTime: 8000,
+    matchTime: 5000,
     actionMaximum: 1,
     resetMatch: 'app',
     rules: [
