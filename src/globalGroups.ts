@@ -1,12 +1,5 @@
 import { defineGkdGlobalGroups } from '@gkd-kit/define';
 
-// const appList = [
-//   { id: 'com.baidu.BaiduMap', name: '百度地图' },
-//   { id: 'com.dragon.read', name: '番茄免费小说' },
-//   { id: 'com.sina.weibo', name: '微博' },
-//   // { id: 'com.szgov.entrance', name: '苏周到' },
-// ];
-
 export default defineGkdGlobalGroups([
   {
     key: 0,
@@ -35,7 +28,6 @@ export default defineGkdGlobalGroups([
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       },
     ],
-    // apps: appList.map((a) => ({ id: a.id })),
   },
   {
     key: 1,
@@ -54,6 +46,22 @@ export default defineGkdGlobalGroups([
         ],
       },
     ],
-    // apps: appList.map((a) => ({ id: a.id })),
+  },
+  {
+    key: 2,
+    name: '青少年模式',
+    order: -8,
+    matchTime: 8000,
+    actionMaximum: 1,
+    resetMatch: 'app',
+    rules: [
+      {
+        key: 0,
+        matches: [
+          '[name!$=".CheckBox"][childCount=0][visibleToUser=true][((text*="青少年" || text*="未成年" || text*="儿童") && (text*="模式" || text*="守护")) && text.length<15 || ((desc*="青少年" || desc*="未成年" || desc*="儿童") && (desc*="模式" || desc*="守护")) && desc.length<15]',
+          '[name!$=".CheckBox"][childCount=0][visibleToUser=true][(text*="知道了" || text*="关闭" || text*="我已知晓" || text*="已满") && text.length<15 || (desc*="知道了" || desc*="关闭" || desc*="我已知晓" || desc*="已满") && desc.length<15]',
+        ],
+      },
+    ],
   },
 ]);
