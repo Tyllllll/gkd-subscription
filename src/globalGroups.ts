@@ -1,4 +1,19 @@
+import { RawApp } from '@gkd-kit/api';
 import { defineGkdGlobalGroups } from '@gkd-kit/define';
+import { batchImportApps } from '@gkd-kit/tools';
+
+// 处理应用规则中与全局规则重复的部分，取消对应的全局规则，以应用规则为准
+const apps = await batchImportApps(`${import.meta.dirname}/apps`);
+function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
+  return apps
+    .filter(
+      (a) =>
+        a.groups.filter((g: { name: string }) =>
+          g.name.startsWith(groupNamePrefix),
+        ).length > 0,
+    )
+    .map((a) => a.id);
+}
 
 export default defineGkdGlobalGroups([
   {
@@ -28,6 +43,10 @@ export default defineGkdGlobalGroups([
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       },
     ],
+    apps: filterAppsByGroup(apps, '开屏广告').map((id) => ({
+      id,
+      enable: false,
+    })),
   },
   {
     key: 1,
@@ -46,6 +65,10 @@ export default defineGkdGlobalGroups([
         ],
       },
     ],
+    apps: filterAppsByGroup(apps, '更新提示').map((id) => ({
+      id,
+      enable: false,
+    })),
   },
   {
     key: 2,
@@ -63,5 +86,9 @@ export default defineGkdGlobalGroups([
         ],
       },
     ],
+    apps: filterAppsByGroup(apps, '青少年模式').map((id) => ({
+      id,
+      enable: false,
+    })),
   },
 ]);
