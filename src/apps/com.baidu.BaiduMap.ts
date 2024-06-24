@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '百度地图',
   groups: [
     {
-      key: 1,
+      key: 0,
       name: '局部广告-地图上方横幅',
       quickFind: true,
       rules: [
@@ -17,7 +17,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
+      key: 1,
       name: '更新提示',
       quickFind: true,
       matchTime: 5000,

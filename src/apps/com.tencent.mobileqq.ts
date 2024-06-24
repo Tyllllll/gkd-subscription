@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: 'QQ',
   groups: [
     {
-      key: 1,
+      key: 0,
       name: '更新提示-首页弹窗',
       desc: '需要点圆形X关闭',
       quickFind: true,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
+      key: 1,
       name: '辅助功能-自动发原图',
       quickFind: true,
       rules: '@CheckBox[checked=false] + [text="原图"]',
