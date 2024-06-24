@@ -1,11 +1,11 @@
 import { defineGkdGlobalGroups } from '@gkd-kit/define';
 
-const appList = [
-  { id: 'com.baidu.BaiduMap', name: '百度地图' },
-  { id: 'com.dragon.read', name: '番茄免费小说' },
-  { id: 'com.sina.weibo', name: '微博' },
-  // { id: 'com.szgov.entrance', name: '苏周到' },
-];
+// const appList = [
+//   { id: 'com.baidu.BaiduMap', name: '百度地图' },
+//   { id: 'com.dragon.read', name: '番茄免费小说' },
+//   { id: 'com.sina.weibo', name: '微博' },
+//   // { id: 'com.szgov.entrance', name: '苏周到' },
+// ];
 
 export default defineGkdGlobalGroups([
   {
@@ -35,7 +35,7 @@ export default defineGkdGlobalGroups([
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       },
     ],
-    apps: appList.map((a) => ({ id: a.id })),
+    // apps: appList.map((a) => ({ id: a.id })),
   },
   {
     key: 1,
@@ -54,6 +54,6 @@ export default defineGkdGlobalGroups([
         ],
       },
     ],
-    apps: appList.map((a) => ({ id: a.id })),
+    // apps: appList.map((a) => ({ id: a.id })),
   },
 ]);
