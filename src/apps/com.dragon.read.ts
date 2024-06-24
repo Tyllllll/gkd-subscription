@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-小说底部广告',
-      actionCd: 30000, // 猜的时间
+      actionCd: 25000, // 猜的时间
       quickFind: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
