@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '更新提示-首页弹窗',
+      name: '更新提示-消息页面弹窗',
       desc: '需要点圆形X关闭',
       quickFind: true,
       matchTime: 8000,
@@ -34,6 +34,22 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12705559', // 已勾选原图
         'https://i.gkd.li/i/13295142',
         'https://i.gkd.li/i/13476247',
+      ],
+    },
+    {
+      key: 2,
+      name: '更新提示-消息页面顶部',
+      quickFind: true,
+      matchTime: 8000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '@ImageView[clickable=true] <n * > [text*="版本更新"]',
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      snapshotUrls: [
+        'https://i.gkd.li/i/13255493', //desc值为null快照
+        'https://i.gkd.li/i/13843140',
+        'https://i.gkd.li/i/14138340',
+        'https://i.gkd.li/i/13931212',
       ],
     },
   ],
