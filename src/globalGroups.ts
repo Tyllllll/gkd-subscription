@@ -15,6 +15,8 @@ function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
     .map((a) => a.id);
 }
 
+const openAdListAppIDs = ['com.vivo.wallet'];
+
 export default defineGkdGlobalGroups([
   {
     key: 0,
@@ -48,7 +50,7 @@ export default defineGkdGlobalGroups([
         id,
         enable: false,
       }))
-      .concat([{ id: 'com.vivo.wallet', enable: true }]),
+      .concat(openAdListAppIDs.map((id) => ({ id, enable: true }))),
   },
   {
     key: 1,
