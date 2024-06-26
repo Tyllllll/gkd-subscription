@@ -15,7 +15,7 @@ function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
     .map((a) => a.id);
 }
 
-const openAdListAppIDs = ['com.vivo.wallet'];
+const openAdListAppIDs = ['com.vivo.wallet', 'com.vivo.space'];
 
 export default defineGkdGlobalGroups([
   {
