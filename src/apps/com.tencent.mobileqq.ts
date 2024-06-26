@@ -52,5 +52,15 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13931212',
       ],
     },
+    {
+      key: 3,
+      name: '更新提示-消息页面顶部安装提示',
+      quickFind: true,
+      matchTime: 8000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: 'TextView[text="立即安装"] + ImageView',
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+    },
   ],
 });
