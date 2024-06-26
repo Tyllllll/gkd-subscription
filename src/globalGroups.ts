@@ -23,6 +23,8 @@ export default defineGkdGlobalGroups([
     matchTime: 5000,
     actionMaximum: 2,
     resetMatch: 'app',
+    actionCdKey: 0,
+    actionMaximumKey: 0,
     rules: [
       {
         key: 0,
@@ -41,10 +43,12 @@ export default defineGkdGlobalGroups([
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       },
     ],
-    apps: filterAppsByGroup(apps, '开屏广告').map((id) => ({
-      id,
-      enable: false,
-    })),
+    apps: filterAppsByGroup(apps, '开屏广告')
+      .map((id) => ({
+        id,
+        enable: false,
+      }))
+      .concat([{ id: 'com.vivo.wallet', enable: true }]),
   },
   {
     key: 1,
