@@ -25,7 +25,7 @@ export default defineGkdApp({
         {
           key: 1,
           preKeys: [0],
-          matches: 'TextView[text="不感兴趣"]',
+          matches: '@View > TextView[text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/16026402',
         },
       ],
