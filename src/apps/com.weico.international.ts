@@ -11,11 +11,10 @@ export default defineGkdApp({
         'com.weico.international.activity.MainFragmentActivity',
         'com.weico.international.ui.search.SearchActivity',
       ],
-      quickFind: true,
-      actionCd: 10000,
       rules: [
         {
           key: 0,
+          quickFind: true,
           matches: 'TextView[text="热推"] +n ImageView[desc="关闭广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/16026346',
