@@ -29,5 +29,15 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '评分广告',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules:
+        '@TextView[text="我没空"] <<11 LinearLayout >3 [text*="请给我们评分"]',
+      snapshotUrls: 'https://i.gkd.li/i/16046977',
+    },
   ],
 });
