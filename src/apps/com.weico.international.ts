@@ -35,9 +35,10 @@ export default defineGkdApp({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      matchTime: 10000,
-      rules:
-        '@TextView[text="我没空"] <<11 LinearLayout >3 [text*="请给我们评分"]',
+      rules: {
+        matches: 'TextView[text*="请给我们评分"]',
+        action: 'back',
+      },
       snapshotUrls: 'https://i.gkd.li/i/16046977',
     },
   ],
