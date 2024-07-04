@@ -15,25 +15,27 @@ export default defineGkdApp({
         {
           key: 0,
           quickFind: true,
-          anyMatches: [
-            'TextView[text="热推"] +n ImageView[desc="关闭广告"]',
-            'TextView[text="广告"] +n ImageView[desc="关闭广告"]',
-          ],
+          anyMatches: 'TextView[text="热推"] +n ImageView[desc="关闭广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/16026346',
             'https://i.gkd.li/i/16026365',
-            'https://i.gkd.li/i/16093937',
           ],
         },
         {
           key: 1,
-          preKeys: [0],
+          preKeys: [0, 2],
           quickFind: true,
           matches: 'TextView[text="不感兴趣"] < View[clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/16026402',
             'https://i.gkd.li/i/16094011',
           ],
+        },
+        {
+          key: 2,
+          quickFind: true,
+          matches: 'TextView[text="广告"] +n ImageView[desc="关闭广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/16093937',
         },
       ],
     },
