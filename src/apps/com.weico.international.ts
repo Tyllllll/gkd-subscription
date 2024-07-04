@@ -15,7 +15,7 @@ export default defineGkdApp({
         {
           key: 0,
           quickFind: true,
-          matches: [
+          anyMatches: [
             'TextView[text="热推"] +n ImageView[desc="关闭广告"]',
             'TextView[text="广告"] +n ImageView[desc="关闭广告"]',
           ],
