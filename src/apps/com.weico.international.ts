@@ -11,10 +11,10 @@ export default defineGkdApp({
         'com.weico.international.activity.MainFragmentActivity',
         'com.weico.international.ui.search.SearchActivity',
       ],
+      quickFind: true,
       rules: [
         {
           key: 0,
-          quickFind: true,
           matches: [
             'TextView[text="热推"] +n ImageView[desc="关闭广告"]',
             'TextView[text="广告"] +n ImageView[desc="关闭广告"]',
