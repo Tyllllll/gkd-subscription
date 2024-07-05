@@ -56,7 +56,7 @@ export default defineGkdGlobalGroups([
     key: 1,
     name: '更新提示',
     order: -9,
-    matchTime: 5000,
+    matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
     rules: [
