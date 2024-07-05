@@ -16,12 +16,13 @@ export default defineGkdApp({
         {
           key: 0,
           matches: [
-            'TextView[text="热推"]',
+            'TextView[text="热推" || text="广告"]',
             'ImageView[vid="item_timeline_ad_action"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/16026346',
             'https://i.gkd.li/i/16026365',
+            'https://i.gkd.li/i/16093937',
           ],
         },
         {
@@ -32,14 +33,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16026402',
             'https://i.gkd.li/i/16094011',
           ],
-        },
-        {
-          key: 2,
-          matches: [
-            'TextView[text="热推"]',
-            'ImageView[vid="item_timeline_ad_action"]',
-          ],
-          snapshotUrls: 'https://i.gkd.li/i/16093937',
         },
       ],
     },
