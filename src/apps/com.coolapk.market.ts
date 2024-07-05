@@ -8,7 +8,10 @@ export default defineGkdApp({
       key: 0,
       name: '局部广告-卡片广告',
       quickFind: true,
-      activityIds: 'com.coolapk.market.view.feed.FeedDetailActivityV8',
+      activityIds: [
+        'com.coolapk.market.view.feed.FeedDetailActivityV8',
+        'com.coolapk.market.view.main.MainActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -17,7 +20,10 @@ export default defineGkdApp({
             'TextView[text*="广告"][visibleToUser=true]',
             'ImageView[id="com.coolapk.market:id/close_view"][desc="关闭"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/16105393',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16105393',
+            'https://i.gkd.li/i/16105564',
+          ],
         },
         {
           key: 1,
