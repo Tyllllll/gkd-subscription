@@ -15,7 +15,7 @@ export default defineGkdApp({
         {
           key: 0,
           quickFind: true,
-          anyMatches: 'TextView[text="热推"] +n ImageView[desc="关闭广告"]',
+          matches: 'TextView[text="热推"] +n ImageView[desc="关闭广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/16026346',
             'https://i.gkd.li/i/16026365',
