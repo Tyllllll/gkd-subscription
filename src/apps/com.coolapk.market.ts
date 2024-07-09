@@ -11,6 +11,7 @@ export default defineGkdApp({
       activityIds: [
         'com.coolapk.market.view.feed.FeedDetailActivityV8',
         'com.coolapk.market.view.main.MainActivity',
+        'com.coolapk.market.view.node.DynamicNodePageActivity',
       ],
       rules: [
         {
