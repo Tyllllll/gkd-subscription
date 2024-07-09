@@ -15,8 +15,6 @@ function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
     .map((a) => a.id);
 }
 
-const openAdListAppIDs = ['com.vivo.wallet', 'com.vivo.space'];
-
 export default defineGkdGlobalGroups([
   {
     key: 0,
@@ -27,6 +25,7 @@ export default defineGkdGlobalGroups([
     resetMatch: 'app',
     actionCdKey: 0,
     actionMaximumKey: 0,
+    matchSystemApp: true,
     rules: [
       {
         key: 0,
@@ -45,12 +44,10 @@ export default defineGkdGlobalGroups([
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       },
     ],
-    apps: filterAppsByGroup(apps, '开屏广告')
-      .map((id) => ({
-        id,
-        enable: false,
-      }))
-      .concat(openAdListAppIDs.map((id) => ({ id, enable: true }))),
+    apps: filterAppsByGroup(apps, '开屏广告').map((id) => ({
+      id,
+      enable: false,
+    })),
   },
   {
     key: 1,
