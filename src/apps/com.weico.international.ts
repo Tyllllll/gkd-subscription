@@ -10,13 +10,14 @@ export default defineGkdApp({
       activityIds: [
         'com.weico.international.activity.MainFragmentActivity',
         'com.weico.international.ui.search.SearchActivity',
+        'com.weico.international.ui.searchhot.SearchHotComposeActivity',
       ],
       quickFind: true,
       rules: [
         {
           key: 0,
           matches: [
-            'TextView[text="热推" || text="广告"]',
+            'TextView[text="热推" || text="广告" || text="推荐"]',
             'ImageView[vid="item_timeline_ad_action"]',
           ],
           snapshotUrls: [
@@ -27,7 +28,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          preKeys: [0, 2],
+          preKeys: 0,
           matches: 'TextView[text="不感兴趣"] < View[clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/16026402',
