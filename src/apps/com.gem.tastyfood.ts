@@ -15,7 +15,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '自动签到',
+      name: '辅助功能-自动签到',
       matchTime: 5000,
       actionMaximum: 1,
       activityIds: 'com.gem.tastyfood.ui.ResultBackActivity',
