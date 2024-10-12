@@ -14,7 +14,8 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.vivo.pay.cardbag.activity.CardTransferActivity',
-          matches: 'LinearLayout[id="com.vivo.wallet:id/ll_search_layout"]',
+          matches: 'TextView[text="选择交通卡"] + LinearLayout > Button',
+          exampleUrls: 'https://i.gkd.li/i/17348979',
         },
         {
           key: 1,
