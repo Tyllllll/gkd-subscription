@@ -8,6 +8,8 @@ export default defineGkdApp({
       key: 0,
       name: '辅助功能-自动选中发送原图',
       quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'activity',
       activityIds: [
         'com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI',
         'com.tencent.mm.plugin.gallery.ui.ImagePreviewUI',
