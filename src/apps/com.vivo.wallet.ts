@@ -14,6 +14,9 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          quickFind: true,
+          actionDelay: 500,
+          actionMaximum: 1,
           activityIds: 'com.vivo.pay.cardbag.activity.CardTransferActivity',
           matches: 'LinearLayout[id="com.vivo.wallet:id/btn_open_card"]',
         },
