@@ -10,7 +10,6 @@ export default defineGkdApp({
       quickFind: true,
       matchTime: 3000,
       actionMaximum: 1,
-      resetMatch: 'activity',
       rules: '@CheckBox[checked=false] + [text="原图"]',
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',

@@ -10,7 +10,6 @@ export default defineGkdApp({
       quickFind: true,
       matchTime: 3000,
       actionMaximum: 1,
-      resetMatch: 'activity',
       activityIds: [
         'com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI',
         'com.tencent.mm.plugin.gallery.ui.ImagePreviewUI',

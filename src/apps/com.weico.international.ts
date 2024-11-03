@@ -9,6 +9,7 @@ export default defineGkdApp({
       name: '评价提示',
       quickFind: true,
       actionMaximum: 1,
+      matchTime: 5000,
       resetMatch: 'app',
       rules: {
         matches: 'TextView[text*="请给我们评分"]',
