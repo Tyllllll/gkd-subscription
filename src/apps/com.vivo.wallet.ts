@@ -9,6 +9,7 @@ export default defineGkdApp({
       name: '辅助功能-看看交通卡便宜没',
       quickFind: true,
       actionDelay: 500,
+      matchTime: 3000,
       actionMaximum: 1,
       rules: [
         {

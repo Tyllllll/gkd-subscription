@@ -8,6 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '辅助功能-自动选中发送原图',
       quickFind: true,
+      matchTime: 3000,
       actionMaximum: 1,
       resetMatch: 'activity',
       activityIds: [
@@ -18,47 +19,6 @@ export default defineGkdApp({
       snapshotUrls: [
         'https://i.gkd.li/i/12840865',
         'https://i.gkd.li/i/15923995',
-      ],
-    },
-    {
-      key: 1,
-      name: '局部广告-朋友圈内部广告',
-      quickFind: true,
-      activityIds: 'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
-      rules: [
-        {
-          key: 0,
-          name: '点击广告箭头',
-          matches: '@LinearLayout >2 TextView[text="广告"]',
-          position: {
-            left: 'width * 0.9223',
-            top: 'width * 0.0349',
-          },
-          snapshotUrls: [
-            'https://i.gkd.li/i/14783802',
-            'https://i.gkd.li/i/15531539',
-          ],
-        },
-        {
-          preKeys: [0],
-          key: 2,
-          name: '点击[关闭该广告]',
-          quickFind: true,
-          matches:
-            '@LinearLayout[index=1][clickable=true] <2 * < * - [text*="广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12642584',
-            'https://i.gkd.li/i/14647839',
-            'https://i.gkd.li/i/14783820',
-          ],
-        },
-        {
-          key: 1,
-          preKeys: [0, 2],
-          name: '点击关闭广告',
-          matches: 'TextView[text*="关闭"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13926578',
-        },
       ],
     },
   ],
