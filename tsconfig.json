@@ -12,10 +12,5 @@
     "esModuleInterop": true,
     "isolatedModules": true
   },
-  "include": [
-    "src",
-    "scripts",
-    "src/apps/com.tencent.mm.ts",
-    "src/apps/com.vivo.wallet.ts"
-  ]
+  "include": ["src", "scripts"]
 }
