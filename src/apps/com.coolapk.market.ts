@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '局部广告-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.coolapk.market.view.feed.FeedDetailActivityV8',
         'com.coolapk.market.view.main.MainActivity',

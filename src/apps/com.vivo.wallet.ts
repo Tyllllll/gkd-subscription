@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '辅助功能-看看交通卡便宜没',
-      quickFind: true,
+      fastQuery: true,
       actionDelay: 500,
       matchTime: 3000,
       actionMaximum: 1,

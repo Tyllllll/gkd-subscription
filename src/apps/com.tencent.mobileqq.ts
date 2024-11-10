@@ -7,8 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '辅助功能-自动发原图',
-      quickFind: true,
-      matchTime: 3000,
+      fastQuery: true,
       actionMaximum: 1,
       rules: '@CheckBox[checked=false] + [text="原图"]',
       activityIds: [
