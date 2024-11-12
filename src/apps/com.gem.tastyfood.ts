@@ -21,7 +21,7 @@ export default defineGkdApp({
       matchTime: 5000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.gem.tastyfood.ui.ResultBackActivity',
+      activityIds: '.ui.ResultBackActivity',
       rules: 'Button[text="立即签到"][clickable=true]',
     },
   ],
